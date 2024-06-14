@@ -1,24 +1,27 @@
-<nav class="navbar navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Rectofilm</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{route('login')}}">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{route('registration')}}">Registration</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        kelompok 2 - Rectofilm
-      </span>
-    </div>
-  </div>
-</nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Rectofilm
+            </a>
+            <form class="form-inline my-2 my-lg-0 mx-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Cari film yang kamu inginkan" aria-label="Search">
+            </form>
+        </div>
+        <div class="container mt-2">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Now Playing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Theaters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Up Coming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Playing in JAKARTA</a>
+                </li>
+            </ul>
+        </div>
+    </nav>

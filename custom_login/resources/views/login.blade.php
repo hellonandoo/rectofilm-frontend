@@ -1,19 +1,24 @@
 @extends('layout')
-@section('title', 'Registrasi')
+@section('title', 'Login')
 
 @section('content')
-    <div class="container">
-        <form action="{{route('login.post')}}" method="POST" class="ms-auto me-auto mt-auto" style="width: 500px">
-            @csrf
-            <div class="mb-3">
-              <label class="form-label">Email address</label>
-              <input type="email" class="form-control" name="email">
+    <div class="container d-flex align-items-center justify-content-center" style="min-height: 50vh;">
+        <div class="card" style="width: 500px;">
+            <div class="card-body">
+                <h5 class="card-title text-center mb-4">Login</h5>
+                <form action="{{ route('login.post') }}" method="POST">
+                    @csrf
+                    <div class="mb-3">
+                        <label class="form-label">Email address</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-success  w-100">Submit</button>
+                </form>
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" name="password">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+        </div>
     </div>
 @endsection
